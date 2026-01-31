@@ -1,9 +1,5 @@
 from yt_dlp.extractor.common import InfoExtractor
-from yt_dlp.YoutubeDL import YoutubeDL
-from yt_dlp.utils import (
-    urljoin
-)
-
+from yt_dlp.utils import urljoin
 
 class ChaptersExampleIE(InfoExtractor):
     _VALID_URL = r'https://jwplayer-chapters-example.vercel.app'
@@ -13,9 +9,4 @@ class ChaptersExampleIE(InfoExtractor):
         data_url = urljoin(url, 'data.json')
         data = self._download_json(data_url, video_id)
 
-        
-        return {
-            **self._parse_jwplayer_data(data, video_id),
-            'id': video_id,
-            'title': 'Steamboat Willie'
-        }
+        return self._parse_jwplayer_data(data, video_id, base_url=url, require_title=False)
