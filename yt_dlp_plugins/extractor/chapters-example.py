@@ -14,5 +14,8 @@ class ChaptersExampleIE(InfoExtractor):
         data = self._download_json(data_url, video_id)
 
         
-
-        return self._parse_jwplayer_data(data, video_id)
+        return {
+            **self._parse_jwplayer_data(data, video_id),
+            'id': video_id,
+            'title': 'Steamboat Willie'
+        }

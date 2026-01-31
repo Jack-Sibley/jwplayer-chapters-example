@@ -1,1 +1,44 @@
-{"sources":[{"default":false,"type":"webm","file":"willie.webm","tracks":[{"file":"./chapters.vtt","kind":"chapters"}],"label":"0","preload":"metadata"}],"tracks":[{"kind":"chapters","default":false,"file":"./chapters.vtt"}],"minDvrWindow":120,"file":"willie.webm","preload":"metadata","allSources":[{"default":false,"type":"webm","file":"willie.webm","tracks":[{"file":"./chapters.vtt","kind":"chapters"}],"label":"0","preload":"metadata"}],"feedData":{}}
+{
+    "sources": [
+        {
+            "default": false,
+            "type": "webm",
+            "file": "willie.webm",
+            "tracks": [
+                {
+                    "file": "./chapters.vtt",
+                    "kind": "chapters"
+                }
+            ],
+            "label": "0",
+            "preload": "metadata"
+        }
+    ],
+    "tracks": [
+        {
+            "kind": "chapters",
+            "default": false,
+            "file": "./chapters.vtt"
+        }
+    ],
+    "minDvrWindow": 120,
+    "file": "willie.webm",
+    "preload": "metadata",
+    "allSources": [
+        {
+            "default": false,
+            "type": "webm",
+            "file": "willie.webm",
+            "tracks": [
+                {
+                    "file": "./chapters.vtt",
+                    "kind": "chapters"
+                }
+            ],
+            "label": "0",
+            "preload": "metadata"
+        }
+    ],
+    "feedData": {},
+    "title": "Steamboat Willie"
+}
