@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='/bin-release/jwplayer.js'></script>
+</head>
+<body>
+    <div id="player">Loading the player...</div>
+    <script>
+        // Setup the player
+        const player = jwplayer('player').setup({
+            file: 'willie.webm',
+            tracks: [{
+                file: './chapters.vtt',
+                kind: 'chapters'
+            }]
+        });
+    </script>
+</body>
+</html>
